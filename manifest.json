@@ -1,0 +1,13 @@
+{
+  "name": "Spiro serial-D3 demo",
+  "description": "Demo of plotting serial data",
+  "version": "0.1",
+  "manifest_version": 2,
+  "permissions": ["serial"],
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "assets/fvl-16.png", "128": "assets/fvl-128.png" }
+}
