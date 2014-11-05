@@ -12,11 +12,11 @@
             <table>
                 <tr>
                     <td>Signal frequency (Hz):</td>
-                    <td><input type="text" name="freq" value=4 disabled=true></td>
+                    <td><input id="freq-input" type="text" name="freq" value=100></td>
                 </tr>
                 <tr>
                     <td>X-axis limit:</td>
-                    <td><input type="text" name="xlimit" value=10 disabled=true></td>
+                    <td><input id="xlim-input" type="text" name="xlimit" value=10></td>
                 </tr>
             </table>
         </div>
@@ -25,6 +25,6 @@
 
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="js/controller.js"></script>
     <script src="js/serial_read.js"></script>
+    <script src="js/controller.js"></script>
 </body>

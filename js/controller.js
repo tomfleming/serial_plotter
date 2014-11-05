@@ -35,3 +35,24 @@ $("#connected-button").click(function(){
         connected = true;
     }
 });
+
+
+$("#freq-input").change(function(){
+    new_freq = $(this).val();
+    if (new_freq!="") {
+        freq = Number(new_freq);
+    } else {
+        $(this).val(freq);
+    }
+});
+
+$("#xlim-input").change(function(){
+    new_max_x = $(this).val();
+    if (new_max_x!="") {
+        max_x = Number(new_max_x);
+        x.domain([0, max_x]);
+        svg.select(".x").call(d3.svg.axis().scale(x).orient("bottom"));
+    } else {
+        $(this).val(max_x);
+    }
+});

@@ -5,7 +5,7 @@ var margin = {top: 20, right: 20, bottom: 20, left: 40},
     height = 250 - margin.top - margin.bottom;
 
 var max_x = 10;
-var freq = 4;
+var freq = 100;
 var x = d3.scale.linear()
     .domain([0, max_x])
     .range([0, width]);
